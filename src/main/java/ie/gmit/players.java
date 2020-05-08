@@ -79,7 +79,7 @@ public class players {
 
     public void setPlayer_number(int player_number) {
 
-        if(player_number >= 99){
+        if(player_number <= 99){
             this.player_number = player_number;
         }
         else{
