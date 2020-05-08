@@ -1,23 +1,23 @@
 package ie.gmit;
 
-public class Companies {
+public class Team {
 
     private String name;
-    private int employee_count;
-    private int departments;
+    private int player_count;
+    private int squads;
     private int managers_count;
-    private int project_count;
+    private int coaches;
 
-    public Companies(String name, int employee_count, int departments, int managers_count, int project_count) {
-        if(name == " " || employee_count == 0 || departments == 0 || managers_count == 0 || project_count == 0){
+    public Team(String name, int player_count, int squads, int managers_count, int coaches) {
+        if(name == " " || player_count == 0 || squads == 0 || managers_count == 0 || coaches == 0){
             throw new IllegalArgumentException("Data is empty");
         }
         else {
             setName(name);
-            setEmployee_count(employee_count);
-            setDepartments(departments);
+            setPlayer_count(player_count);
+            setSquads(squads);
             setManagers_count(managers_count);
-            setProject_count(project_count);
+            setCoaches(coaches);
 
         }
     }
@@ -31,26 +31,26 @@ public class Companies {
         this.name = name;
     }
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-    public int getEmployee_count() {
-        return employee_count;
+    public int getPlayer_count() {
+        return player_count;
     }
 
-    public void setEmployee_count(int employee_count) {
-        this.employee_count = employee_count;
+    public void setPlayer_count(int player_count) {
+        this.player_count = player_count;
     }
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-    public int getDepartments() {
-        return departments;
+    public int getSquads() {
+        return squads;
     }
 
-    public void setDepartments(int departments) {
+    public void setSquads(int squads) {
 
 
-        if(employee_count >= departments){
-            this.departments = departments;
+        if(player_count >= squads){
+            this.squads = squads;
         }
         else {
-            throw new IllegalArgumentException("Invalid amount of managers for the departments");
+            throw new IllegalArgumentException("Invalid amount of players for number of squads");
         }
 
     }
@@ -66,17 +66,17 @@ public class Companies {
 
     }
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-    public int getProject_count() {
-        return project_count;
+    public int getCoaches() {
+        return coaches;
     }
 
-    public void setProject_count(int project_count) {
+    public void setCoaches(int coaches) {
 
-        if(project_count<departments){
-            throw new IllegalArgumentException("Invalid amount of projects, a department has no project");
+        if(coaches < squads){
+            throw new IllegalArgumentException("Invalid amount of coaches, a squad has no coach");
         }
         else{
-            this.project_count = project_count;
+            this.coaches = coaches;
         }
 
     }

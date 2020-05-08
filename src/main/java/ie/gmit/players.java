@@ -2,18 +2,18 @@ package ie.gmit;
 
 
 
-public class employees {
+public class players {
     private String first_name;
     private String second_name;
     private String email;
     private String phone_number;
-    private int employee_number;
+    private int player_number;
     private String address;
 
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 
-    public employees(String first_name, String second_name, String email, String phone_number, int employee_number, String address) {
+    public players(String first_name, String second_name, String email, String phone_number, int player_number, String address) {
 
         if(first_name == " " ||  second_name == " " || email == " " || phone_number == " " || address == " "){
             throw new IllegalArgumentException("Data is empty");
@@ -23,7 +23,7 @@ public class employees {
             setSecond_name(second_name);
             setEmail(email);
             setPhone_number(phone_number);
-            setEmployee_number(employee_number);
+            setPlayer_number(player_number);
             setAddress(address);
         }
     }
@@ -73,14 +73,14 @@ public class employees {
 
     }
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-    public int getEmployee_number() {
-        return employee_number;
+    public int getPlayer_number() {
+        return player_number;
     }
 
-    public void setEmployee_number(int employee_number) {
+    public void setPlayer_number(int player_number) {
 
-        if(employee_number >= 100){
-            this.employee_number = employee_number;
+        if(player_number >= 99){
+            this.player_number = player_number;
         }
         else{
             throw new IllegalArgumentException("Invalid number length ");
