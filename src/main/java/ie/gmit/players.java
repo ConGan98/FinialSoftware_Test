@@ -83,7 +83,7 @@ public class players {
             this.player_number = player_number;
         }
         else{
-            throw new IllegalArgumentException("Invalid number length ");
+            throw new IllegalArgumentException("Invalid squad number");
         }
     }
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//

@@ -12,7 +12,7 @@ public class playersTest {
 
     @BeforeEach
     void init(){
-        myplayers = new players("Conor", "Kenny", "conorjKenny@gmail.com", "093 1234567",101,"H54 HD53");
+        myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "093 1234567",101,"H54 HD53");
     }
 
     @Test
@@ -28,7 +28,7 @@ public class playersTest {
     @Test
     void emptydataFail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players(" ", "Kenny", "cks@gmsil", "093 1234567",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players(" ", "Pogba", "pPogba@gmsil", "093 1234567",6,"H54 HD53"));
         assertEquals("Data is empty",e.getMessage());
     }
 
@@ -76,7 +76,7 @@ public class playersTest {
     void PlayerNumberFail(){
         //testing empty EmployeeNumber
         Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Conor", "Kenny", "conorjKenny@gmail.com", "093 1234567",0,"H54 HD53"));
-        assertEquals("Invalid number length ",e.getMessage());
+        assertEquals("Invalid squad number length",e.getMessage());
     }
 
     @Test
