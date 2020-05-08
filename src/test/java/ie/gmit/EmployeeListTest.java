@@ -19,7 +19,7 @@ public class EmployeeListTest {
 
     @Test
     void addEmployee() {
-        employees e1 = new employees(" ", "kenny", "conork@gmail", "1234567890", 121, "loughrea");
+        employees e1 = new employees("conor ", "kenny", "conork@gmail", "1234567890", 121, "loughrea");
         NewList = new EmployeeList();
         NewList.addEmployee(e1);
 
