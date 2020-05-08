@@ -79,11 +79,11 @@ public class players {
 
     public void setPlayer_number(int player_number) {
 
-<span class="fc bfc" id="L82" title="All 2 branches covered.">        if(player_number &gt;= 99){</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        if(player_number &lt;= 99){</span>
 <span class="fc" id="L83">            this.player_number = player_number;</span>
         }
         else{
-<span class="fc" id="L86">            throw new IllegalArgumentException(&quot;Invalid number length &quot;);</span>
+<span class="fc" id="L86">            throw new IllegalArgumentException(&quot;Invalid squad number&quot;);</span>
         }
 <span class="fc" id="L88">    }</span>
     //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.TeamTest" time="0.025" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.TeamTest" time="0.128" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\conork033\AppData\Local\Temp\surefire6432877137136461138\surefirebooter12649809627477519064.jar C:\Users\conork033\AppData\Local\Temp\surefire6432877137136461138 2020-05-08T21-56-44_405-jvmRun1 surefire17479750367025111281tmp surefire_02506481012646470404tmp"/>
+    <property name="sun.java.command" value="C:\Users\conork033\AppData\Local\Temp\surefire4989364235224989668\surefirebooter15923511606515515534.jar C:\Users\conork033\AppData\Local\Temp\surefire4989364235224989668 2020-05-08T23-00-21_653-jvmRun1 surefire16797346829877757179tmp surefire_0603641133769061801tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\conork033\Desktop\FinialSoftware_Test\target\test-classes;C:\Users\conork033\Desktop\FinialSoftware_Test\target\classes;C:\Users\conork033\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\conork033\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\conork033\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\conork033\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\conork033\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\conork033\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\conork033\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\conork033\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\conork033\AppData\Local\Temp\surefire6432877137136461138\surefirebooter12649809627477519064.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\conork033\AppData\Local\Temp\surefire4989364235224989668\surefirebooter15923511606515515534.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
@@ -56,12 +56,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="Coachsfail2" classname="ie.gmit.TeamTest" time="0.002"/>
+  <testcase name="Coachsfail2" classname="ie.gmit.TeamTest" time="0.007"/>
   <testcase name="playerNosfail" classname="ie.gmit.TeamTest" time="0.002"/>
-  <testcase name="addcompany" classname="ie.gmit.TeamTest" time="0.001"/>
-  <testcase name="addComapanyfail1" classname="ie.gmit.TeamTest" time="0.002"/>
-  <testcase name="addComapanyfail2" classname="ie.gmit.TeamTest" time="0.002"/>
-  <testcase name="addComapanyfail3" classname="ie.gmit.TeamTest" time="0.001"/>
-  <testcase name="addComapanyfail4" classname="ie.gmit.TeamTest" time="0.002"/>
-  <testcase name="addComapanyfail" classname="ie.gmit.TeamTest" time="0.001"/>
+  <testcase name="addcompany" classname="ie.gmit.TeamTest" time="0.008"/>
+  <testcase name="addComapanyfail1" classname="ie.gmit.TeamTest" time="0.003"/>
+  <testcase name="addComapanyfail2" classname="ie.gmit.TeamTest" time="0.003"/>
+  <testcase name="addComapanyfail3" classname="ie.gmit.TeamTest" time="0.002"/>
+  <testcase name="addComapanyfail4" classname="ie.gmit.TeamTest" time="0.001"/>
+  <testcase name="addComapanyfail" classname="ie.gmit.TeamTest" time="0.003"/>
 </testsuite>

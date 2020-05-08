@@ -35,20 +35,20 @@ public class playersTest {
     @Test
     void emptydataFail1(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("con", " ", "cks@gmsil", "093 1234567",6,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Juan", " ", "jMATA@gmsil", "093 1234567",8,"H54 H993"));
         assertEquals("Data is empty",e.getMessage());
     }
 
     @Test
     void emptydataFail2(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("conor ", "Kenny", " ", "093 1234567",6,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("juan ", "mata", " ", "093 1234567",8,"H54 H993"));
         assertEquals("Data is empty",e.getMessage());
     }
     @Test
     void emptydataFail3(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("conor ", "Kenny", "ioijij ", " ",6,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("De Gea ", "Davide", "dg@gmai;.com ", " ",1,"H54 HD99"));
         assertEquals("Data is empty",e.getMessage());
     }
 
@@ -57,32 +57,32 @@ public class playersTest {
     @Test
     void emptydataFail4(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("con ", "Kenny", "cks@gmsil", "093 1234567",6," "));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Anthony ", "Martial", "AM@gmsil", "093 1233567",9," "));
         assertEquals("Data is empty",e.getMessage());
     }
     @Test
     void emailFail(){
         //testing empty email
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Conor", "Kenny", "hghasgh ", "093 1234567",6,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("James", "Daniel", "DGgmail ", "093 1234267",22,"H54 H443"));
         assertEquals("Invalid email address must have @ ",e.getMessage());
     }
     @Test
     void phoneNumberFail(){
         //testing empty phone number
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Conor", "Kenny", "conorjKenny@gmail.com", "566 ",6,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "566 ",6,"H54 HD53"));
         assertEquals("Invalid Phone number length ",e.getMessage());//tets
     }
     @Test
     void PlayerNumberFail(){
         //testing empty EmployeeNumber
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Conor", "Kenny", "conorjKenny@gmail.com", "093 1234567",100,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Marcus", "Rashford", "mr@gmail.com", "093 1234567",100,"H54 HD53"));
         assertEquals("Invalid squad number",e.getMessage());
     }
 
     @Test
     void addressFail(){
         //testing empty address
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Conor", "Kenny", "conorjgannon@gmail.com", "093 1234567",6,"1234"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "093 1234567",6,"1234"));
         assertEquals("Invalid post code length ",e.getMessage());
     }
 }
