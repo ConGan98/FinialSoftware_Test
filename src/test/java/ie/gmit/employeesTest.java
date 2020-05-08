@@ -12,15 +12,15 @@ public class employeesTest {
 
     @BeforeEach
     void init(){
-        myemployees = new employees("Conor", "Gannon", "conorjgannon@gmail.com", "093 1234567",101,"H54 HD53");
+        myemployees = new employees("Conor", "Kenny", "conorjKenny@gmail.com", "093 1234567",101,"H54 HD53");
     }
 
     @Test
     void addEmployee(){
         //default test everything good
         assertEquals("Conor",myemployees.getFirst_name());
-        assertEquals("Gannon",myemployees.getSecond_name());
-        assertEquals("conorjgannon@gmail.com",myemployees.getEmail());
+        assertEquals("Kenny",myemployees.getSecond_name());
+        assertEquals("conorjKenny@gmail.com",myemployees.getEmail());
         assertEquals("093 1234567",myemployees.getPhone_number());
         assertEquals(101,myemployees.getEmployee_number());
         assertEquals("H54 HD53",myemployees.getAddress());
