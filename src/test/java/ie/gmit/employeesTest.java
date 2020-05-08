@@ -28,7 +28,7 @@ public class employeesTest {
     @Test
     void emptydataFail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("con ", "Gannon", "", "093 1234567",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees(" ", "Gannon", "", "093 1234567",101,"H54 HD53"));
         assertEquals("Data is empty",e.getMessage());
     }
     @Test
