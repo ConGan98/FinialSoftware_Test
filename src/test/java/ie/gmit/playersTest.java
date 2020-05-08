@@ -12,17 +12,17 @@ public class playersTest {
 
     @BeforeEach
     void init(){
-        myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "093 1234567",101,"H54 HD53");
+        myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "093 1234567",6,"H54 HD53");
     }
 
     @Test
     void addEmployee(){
         //default test everything good
-        assertEquals("Conor", myplayers.getFirst_name());
-        assertEquals("Kenny", myplayers.getSecond_name());
-        assertEquals("conorjKenny@gmail.com", myplayers.getEmail());
+        assertEquals("Paul", myplayers.getFirst_name());
+        assertEquals("Pogba", myplayers.getSecond_name());
+        assertEquals("pPogba@gmail.com", myplayers.getEmail());
         assertEquals("093 1234567", myplayers.getPhone_number());
-        assertEquals(101, myplayers.getPlayer_number());
+        assertEquals(6, myplayers.getPlayer_number());
         assertEquals("H54 HD53", myplayers.getAddress());
     }
     @Test
