@@ -48,7 +48,7 @@ public class EmployeeListTest {
 
 
         assertEquals(true,NewList.SearchEmployee(e4));
-      //  NewList.deleteEmployee(e4);
+        NewList.deleteEmployee(e4);
         Exception e = assertThrows(IllegalArgumentException.class,()-> NewList.SearchEmployee(e4));
         assertEquals("Employee data does not exist",e.getMessage());
     }
