@@ -28,32 +28,32 @@ public class employeesTest {
     @Test
     void emptydataFail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("con ", "Gannon", "", "093 1234567",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees(" ", "Kenny", "", "093 1234567",101,"H54 HD53"));
         assertEquals("Data is empty",e.getMessage());
     }
     @Test
     void emailFail(){
         //testing empty email
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Gannon", "", "093 1234567",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "", "093 1234567",101,"H54 HD53"));
         assertEquals("Invalid email address must have @ ",e.getMessage());
     }
     @Test
     void phoneNumberFail(){
         //testing empty phone number
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Gannon", "conorjgannon@gmail.com", "",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "conorjKenny@gmail.com", "",101,"H54 HD53"));
         assertEquals("Invalid Phone number length ",e.getMessage());//tets
     }
     @Test
     void EmployeeNumberFail(){
         //testing empty EmployeeNumber
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Gannon", "conorjgannon@gmail.com", "093 1234567",0,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "conorjKenny@gmail.com", "093 1234567",0,"H54 HD53"));
         assertEquals("Invalid number length ",e.getMessage());
     }
 
     @Test
     void addressFail(){
         //testing empty address
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Gannon", "conorjgannon@gmail.com", "093 1234567",101,"1234"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "conorjgannon@gmail.com", "093 1234567",101,"1234"));
         assertEquals("Invalid post code length ",e.getMessage());
     }
 }
