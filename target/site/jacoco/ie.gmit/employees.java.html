@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>employees.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ie.gmit</a> &gt; <a href="index.source.html" class="el_package">ie.gmit</a> &gt; <span class="el_source">employees.java</span></div><h1>employees.java</h1><pre class="source lang-java linenums">package ie.gmit;
+
+
+
+public class employees {
+    private String first_name;
+    private String second_name;
+    private String email;
+    private String phone_number;
+    private int employee_number;
+    private String address;
+
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+<span class="fc" id="L16">    public employees(String first_name, String second_name, String email, String phone_number, int employee_number, String address) {</span>
+
+<span class="fc bfc" id="L18" title="All 10 branches covered.">        if(first_name == &quot; &quot; ||  second_name == &quot; &quot; || email == &quot; &quot; || phone_number == &quot; &quot; || address == &quot; &quot;){</span>
+<span class="fc" id="L19">            throw new IllegalArgumentException(&quot;Data is empty&quot;);</span>
+        }
+        else {
+<span class="fc" id="L22">            setFirst_name(first_name);</span>
+<span class="fc" id="L23">            setSecond_name(second_name);</span>
+<span class="fc" id="L24">            setEmail(email);</span>
+<span class="fc" id="L25">            setPhone_number(phone_number);</span>
+<span class="fc" id="L26">            setEmployee_number(employee_number);</span>
+<span class="fc" id="L27">            setAddress(address);</span>
+        }
+<span class="fc" id="L29">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+    public String getFirst_name() {
+<span class="fc" id="L32">        return first_name;</span>
+    }
+
+    public void setFirst_name(String first_name) {
+<span class="fc" id="L36">        this.first_name = first_name;</span>
+<span class="fc" id="L37">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+    public String getSecond_name() {
+<span class="fc" id="L40">        return second_name;</span>
+    }
+
+    public void setSecond_name(String second_name) {
+<span class="fc" id="L44">        this.second_name = second_name;</span>
+<span class="fc" id="L45">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+    public String getEmail() {
+<span class="fc" id="L48">        return email;</span>
+    }
+
+    public void setEmail(String email) {
+
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        if(email.contains(&quot;@&quot;)){</span>
+<span class="fc" id="L54">            this.email = email;</span>
+        }
+        else{
+<span class="fc" id="L57">            throw new IllegalArgumentException(&quot;Invalid email address must have @ &quot;);</span>
+        }
+<span class="fc" id="L59">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+    public String getPhone_number() {
+<span class="fc" id="L62">        return phone_number;</span>
+    }
+
+    public void setPhone_number(String phone_number) {
+
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if(phone_number.length() &gt;= 10){</span>
+<span class="fc" id="L68">            this.phone_number = phone_number;</span>
+        }
+        else{
+<span class="fc" id="L71">            throw new IllegalArgumentException(&quot;Invalid Phone number length &quot;);</span>
+        }
+
+<span class="fc" id="L74">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+    public int getEmployee_number() {
+<span class="fc" id="L77">        return employee_number;</span>
+    }
+
+    public void setEmployee_number(int employee_number) {
+
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        if(employee_number &gt;= 100){</span>
+<span class="fc" id="L83">            this.employee_number = employee_number;</span>
+        }
+        else{
+<span class="fc" id="L86">            throw new IllegalArgumentException(&quot;Invalid number length &quot;);</span>
+        }
+<span class="fc" id="L88">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+    public String getAddress() {
+<span class="fc" id="L91">        return address;</span>
+    }
+
+    public void setAddress(String address) {
+
+<span class="fc bfc" id="L96" title="All 2 branches covered.">        if(address.length() &gt;= 7){</span>
+<span class="fc" id="L97">            this.address = address;</span>
+        }else{
+<span class="fc" id="L99">            throw new IllegalArgumentException(&quot;Invalid post code length &quot;);</span>
+        }
+<span class="fc" id="L101">    }</span>
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -28,19 +28,48 @@ public class employeesTest {
     @Test
     void emptydataFail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees(" ", "Kenny", "", "093 1234567",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees(" ", "Kenny", "cks@gmsil", "093 1234567",101,"H54 HD53"));
+        assertEquals("Data is empty",e.getMessage());
+    }
+
+    @Test
+    void emptydataFail1(){
+
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("con", " ", "cks@gmsil", "093 1234567",101,"H54 HD53"));
+        assertEquals("Data is empty",e.getMessage());
+    }
+
+    @Test
+    void emptydataFail2(){
+
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("conor ", "Kenny", " ", "093 1234567",101,"H54 HD53"));
+        assertEquals("Data is empty",e.getMessage());
+    }
+    @Test
+    void emptydataFail3(){
+
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("conor ", "Kenny", "ioijij ", " ",101,"H54 HD53"));
+        assertEquals("Data is empty",e.getMessage());
+    }
+
+
+
+    @Test
+    void emptydataFail4(){
+
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("con ", "Kenny", "cks@gmsil", "093 1234567",101," "));
         assertEquals("Data is empty",e.getMessage());
     }
     @Test
     void emailFail(){
         //testing empty email
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "", "093 1234567",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "hghasgh ", "093 1234567",101,"H54 HD53"));
         assertEquals("Invalid email address must have @ ",e.getMessage());
     }
     @Test
     void phoneNumberFail(){
         //testing empty phone number
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "conorjKenny@gmail.com", "",101,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myemployees = new employees("Conor", "Kenny", "conorjKenny@gmail.com", "566 ",101,"H54 HD53"));
         assertEquals("Invalid Phone number length ",e.getMessage());//tets
     }
     @Test
