@@ -9,7 +9,6 @@ public class EmployeeList {
     public void addEmployee(employees employee){
 
 
-
         if(NewList.contains(employee) != false){
             throw new IllegalArgumentException("Employee data already exists");
         }

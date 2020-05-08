@@ -52,4 +52,12 @@ public class EmployeeListTest {
         Exception e = assertThrows(IllegalArgumentException.class,()-> NewList.SearchEmployee(e4));
         assertEquals("Employee data does not exist",e.getMessage());
     }
+
+    @Test
+    void cannotFind(){
+        NewList = new EmployeeList();
+        employees e4 = new employees("Conor","kenny","conork@gmail","1234567890",121,"loughrea");
+        Exception e = assertThrows(IllegalArgumentException.class,()-> NewList.deleteEmployee(e4));
+        assertEquals("Employee data does not exist",e.getMessage());
+    }
 }
