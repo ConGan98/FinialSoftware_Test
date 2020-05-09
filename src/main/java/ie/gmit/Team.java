@@ -1,5 +1,6 @@
 package ie.gmit;
-
+/*Conor Kenny 09/05/20 G00352227
+* class for entering details of the team such as number of squads,player numbers,team name and number of coaches  */
 public class Team {
 
     private String name;

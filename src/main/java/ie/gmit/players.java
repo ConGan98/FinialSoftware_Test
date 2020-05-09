@@ -1,5 +1,7 @@
 package ie.gmit;
-
+/*Conor Kenny G00352227
+* Class for adding player details such as names email address and address within certain criteria
+ */
 
 
 public class players {

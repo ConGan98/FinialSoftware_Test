@@ -1,4 +1,6 @@
 package ie.gmit;
+/* Conor Kenny G00352227
+Junit Tests for players class */
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +19,7 @@ public class playersTest {
 
     @Test
     void addEmployee(){
-        //default test everything good
+
         assertEquals("Paul", myplayers.getFirst_name());
         assertEquals("Pogba", myplayers.getSecond_name());
         assertEquals("pPogba@gmail.com", myplayers.getEmail());
@@ -62,26 +64,26 @@ public class playersTest {
     }
     @Test
     void emailFail(){
-        //testing empty email
+
         Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("James", "Daniel", "DGgmail ", "093 1234267",22,"H54 H443"));
         assertEquals("Invalid email address must have @ ",e.getMessage());
     }
     @Test
     void phoneNumberFail(){
-        //testing empty phone number
+
         Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "566 ",6,"H54 HD53"));
         assertEquals("Invalid Phone number length ",e.getMessage());//tets
     }
     @Test
     void PlayerNumberFail(){
-        //testing empty EmployeeNumber
+
         Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Marcus", "Rashford", "mr@gmail.com", "093 1234567",100,"H54 HD53"));
         assertEquals("Invalid squad number",e.getMessage());
     }
 
     @Test
     void addressFail(){
-        //testing empty address
+
         Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Paul", "Pogba", "pPogba@gmail.com", "093 1234567",6,"1234"));
         assertEquals("Invalid post code length ",e.getMessage());
     }

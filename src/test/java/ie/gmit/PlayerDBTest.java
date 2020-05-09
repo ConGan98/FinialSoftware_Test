@@ -1,8 +1,11 @@
 package ie.gmit;
+/* Conor Kenny G00352227
+Junit Tests for PlayerDBTest class */
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+/* Conor Kenny G00352227
+Junit Tests for PlayerDBTest class */
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,7 +21,7 @@ public class PlayerDBTest {
     }
 
     @Test
-    void addEmployee() {
+    void addPlayer() {
         players p1 = new players("Paul ", "Pogba", "pPogba@gmail", "1234567890", 6, "1234567");
         NewList = new PlayerDB();
         NewList.addPlayer(p1);
@@ -27,8 +30,8 @@ public class PlayerDBTest {
     }
 
     @Test
-    void addEmployeeDup(){
-        //Test to catch a error Dup of Employee
+    void addPlayerDuplicate(){
+
         NewList = new PlayerDB();
         players p2 = new players("Paul","Pogba","pPogba@gmail","1234567890",6,"loughrea");
         NewList.addPlayer(p2);
@@ -41,7 +44,7 @@ public class PlayerDBTest {
 
     @Test
     void removePlayer(){
-        //Test to find if employee exists to remove
+
         players p4 = new players("Paul","Pogba","pPogba@gmail","1234567890",6,"loughrea");
         NewList = new PlayerDB();
         Exception e = assertThrows(IllegalArgumentException.class,()-> NewList.deletePlayer(p4));
@@ -50,7 +53,7 @@ public class PlayerDBTest {
 
     @Test
     void removePlayerSuccess(){
-        //Test to find if employee exists to remove
+
         players p4 = new players("Paul","Pogba","pPogba@gmail","1234567890",6,"loughrea");
         NewList = new PlayerDB();
         NewList.addPlayer(p4);
@@ -60,7 +63,7 @@ public class PlayerDBTest {
     }
 
     @Test
-    void searchEmployeeFail(){
+    void searchPlayerFail(){
         players p4 = new players("Paul","Pogba","pPogba@gmail","1234567890",6,"loughrea");
         NewList = new PlayerDB();
         Exception e = assertThrows(IllegalArgumentException.class,()-> NewList.SearchPlayer(p4));
