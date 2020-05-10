@@ -54,9 +54,9 @@ public class PlayerDBTest {
     @Test
     void removePlayerSuccess(){
 
-        players p4 = new players(" ","Pogba","pPogba@gmail","1234567890",6,"loughrea");
+        players p4 = new players("Paul","Pogba","pPogba@gmail","1234567890",6,"loughrea");
         NewList = new PlayerDB();
-        NewList.addPlayer(p4);
+        NewList.addPlayer(p1);
         NewList.deletePlayer(p4);
 
 
