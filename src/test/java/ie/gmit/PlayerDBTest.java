@@ -56,7 +56,7 @@ public class PlayerDBTest {
 
         players p4 = new players("Paul","Pogba","pPogba@gmail","1234567890",6,"loughrea");
         NewList = new PlayerDB();
-        NewList.addPlayer(p4);
+        NewList.addPlayer(p2);
         NewList.deletePlayer(p4);
 
 
