@@ -62,7 +62,7 @@ public class TeamTest {
     @Test
     void playerNosfail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myTeam = new Team("Conor's company", 1,  4,3,101));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myTeam = new Team(" ", 1,  4,3,101));
         assertEquals("Invalid amount of players for number of squads",e.getMessage());
     }
 
@@ -71,7 +71,7 @@ public class TeamTest {
     @Test
     void Coachsfail2(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myTeam = new Team("Conor's company", 100,  5,5,4));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myTeam = new Team("Man United", 100,  5,5,4));
         assertEquals("Invalid amount of coaches, a squad has no coach",e.getMessage());
     }
 
