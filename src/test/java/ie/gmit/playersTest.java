@@ -50,7 +50,7 @@ public class playersTest {
     @Test
     void emptydataFail3(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("De Gea ", "Davide", "dg@gmai;.com ", " ",1,"H54 HD99"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players(" ", "Davide", "dg@gmai;.com ", " ",1,"H54 HD99"));
         assertEquals("Data is empty",e.getMessage());
     }
 
