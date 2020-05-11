@@ -77,7 +77,7 @@ public class playersTest {
     @Test
     void PlayerSquadNumberFail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Marcus", "Rashford", "mr@gmail.com", "093 1234567",5,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Marcus", "Rashford", "mr@gmail.com", "093 1234567",100,"H54 HD53"));
         assertEquals("Invalid squad number",e.getMessage());
     }
 
