@@ -12,4 +12,4 @@ cache:
     - $HOME/.m2
 
 notifications:
-  email: g00352227@gmit.ie, conork033@gmail.com
+  email: conork033@gmail.com,g00352227@gmit.ie
