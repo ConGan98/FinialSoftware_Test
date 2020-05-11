@@ -50,7 +50,7 @@ public class playersTest {
     @Test
     void emptydataFail3(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players(" ", "Davide", "dg@gmai;.com ", " ",1,"H54 HD99"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Davide ", "Davide", "dg@gmai;.com ", " ",1,"H54 HD99"));
         assertEquals("Data is empty",e.getMessage());
     }
 
@@ -75,9 +75,9 @@ public class playersTest {
         assertEquals("Invalid Phone number length ",e.getMessage());//tets
     }
     @Test
-    void PlayerNumberFail(){
+    void PlayerSquadNumberFail(){
 
-        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Marcus", "Rashford", "mr@gmail.com", "093 1234567",100,"H54 HD53"));
+        Exception e = assertThrows(IllegalArgumentException.class,()-> myplayers = new players("Marcus", "Rashford", "mr@gmail.com", "093 1234567",5,"H54 HD53"));
         assertEquals("Invalid squad number",e.getMessage());
     }
 
