@@ -12,7 +12,7 @@ public class players {
     private int player_number;
     private String address;
 
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 
 
     public players(String first_name, String second_name, String email, String phone_number, int player_number, String address) {
@@ -29,7 +29,7 @@ public class players {
             setAddress(address);
         }
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
     public String getFirst_name() {
         return first_name;
     }
@@ -37,7 +37,7 @@ public class players {
     public void setFirst_name(String first_name) {
         this.first_name = first_name;
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
     public String getSecond_name() {
         return second_name;
     }
@@ -45,7 +45,7 @@ public class players {
     public void setSecond_name(String second_name) {
         this.second_name = second_name;
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
     public String getEmail() {
         return email;
     }
@@ -59,7 +59,7 @@ public class players {
             throw new IllegalArgumentException("Invalid email address must have @ ");
         }
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
     public String getPhone_number() {
         return phone_number;
     }
@@ -74,7 +74,7 @@ public class players {
         }
 
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
     public int getPlayer_number() {
         return player_number;
     }
@@ -88,7 +88,7 @@ public class players {
             throw new IllegalArgumentException("Invalid squad number");
         }
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
     public String getAddress() {
         return address;
     }
@@ -101,5 +101,5 @@ public class players {
             throw new IllegalArgumentException("Invalid post code length ");
         }
     }
-    //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 }

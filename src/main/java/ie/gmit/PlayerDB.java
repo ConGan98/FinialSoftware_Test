@@ -1,7 +1,7 @@
 package ie.gmit;
 /*Conor Kenny 9/05/2020 G00352227
 * Player DB for adding players that fit requirements
-* players can be added searcged and deleted from the database  */
+* players can be added searched and deleted from the database  */
 
 import java.util.ArrayList;
 import java.util.List;

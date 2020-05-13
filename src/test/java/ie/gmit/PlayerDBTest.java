@@ -4,8 +4,7 @@ Junit Tests for PlayerDBTest class */
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-/* Conor Kenny G00352227
-Junit Tests for PlayerDBTest class */
+
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
